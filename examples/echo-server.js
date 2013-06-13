@@ -1,18 +1,4 @@
-min-tcp
-=======
-
-A min-stream tcp interface for js-git and node.js
-
-This module implements the following functions from the [tcp interface][].
-
- - `createServer(port, [host]) -> source<socket>`
- - `connect(port, [host]) -> continuable<socket>`
-
-Here is an example creating a TCP echo server that accepts only the first client
-to connect.
-
-```js
-var tcp = require('min-tcp');
+var tcp = require('../.');
 
 // Create a tcp server listening at localhost port 8080
 // server is a min-stream source that emits sockets as clients connect.
@@ -38,6 +24,3 @@ server(null, function (err, client) {
     else console.log("The server is now closed");
   });
 });
-```
-
-[tcp interface]: https://github.com/creationix/js-git/blob/master/specs/tcp.md
