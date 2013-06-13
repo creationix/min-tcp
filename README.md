@@ -3,7 +3,7 @@ min-tcp
 
 A min-stream tcp interface for js-git and node.js
 
-This module implements the tcp interface for js-git as documented at <https://github.com/creationix/js-git/blob/master/specs/tcp.md>
+This module implements the [tcp interface][] for js-git.
 
  - createServer(port, [host]) -> source<socket>
  - connect(port, [host]) -> socket
@@ -41,3 +41,4 @@ server(null, function (err, client) {
 ```
 
 
+[tcp interface]: https://github.com/creationix/js-git/blob/master/specs/tcp.md
