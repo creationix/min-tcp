@@ -4,7 +4,7 @@
 //   https://github.com/creationix/js-git/blob/master/specs/tcp.md
 //
 var net = require('net');
-var wrapStream = require('./common.js').wrapStream;
+var wrapStream = require('min-stream-node').wrapStream;
 
 module.exports = {
   createServer: createServer,

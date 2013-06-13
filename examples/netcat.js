@@ -1,6 +1,6 @@
 var tcp = require('../.');
-var streamToSource = require('../common.js').streamToSource;
-var streamToSink = require('../common.js').streamToSink;
+var streamToSource = require('min-stream-node').streamToSource;
+var streamToSink = require('min-stream-node').streamToSink;
 
 if (!process.argv[2]) {
   console.error("Usage: %s port [host]", process.argv[1]);

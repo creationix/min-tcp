@@ -1,6 +1,6 @@
 {
   "name": "min-tcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A min-stream tcp interface for js-git and node.js",
   "main": "tcp.js",
   "scripts": {
@@ -19,8 +19,10 @@
   "author": "Tim Caswell <tim@creationix.com>",
   "license": "MIT",
   "readmeFilename": "README.md",
-  "gitHead": "088cd11533301321bbb52315d2e521cc29072b3a",
   "bugs": {
     "url": "https://github.com/creationix/min-tcp/issues"
+  },
+  "dependencies": {
+    "min-stream-node": "~0.1.0"
   }
 }
